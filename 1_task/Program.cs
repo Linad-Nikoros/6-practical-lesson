@@ -11,7 +11,9 @@ for (int i = 0; i < array1.Length; i++)
     array1[i] = Convert.ToInt32(Console.ReadLine());
 }
 
+int count = 0;
 for (int i = 0; i < array1.Length; i++)
 {
-    Console.Write(array1[i] + " ");
+if(array1[i]>0) count=count+1;
 }
+Console.Write($"Количетсво числе больше 0 равно: {count}");
